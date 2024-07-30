@@ -95,7 +95,7 @@ public class HawtioOnlineUtils {
                         .addNewContainer()
                             .addAllToEnv(envVars)
                             .withName("app")
-                            .withImage("quay.io/dafu/hawtio-online-"+ imageName + ":" + tag)
+                            .withImage("quay.io/shreya_kajbaje30/hawtio-online-"+ imageName + ":" + tag)
                             .withPorts(new ContainerPortBuilder().withName("jolokia").withContainerPort(8778).withProtocol("TCP").build())
                         .endContainer()
                     .endSpec()
