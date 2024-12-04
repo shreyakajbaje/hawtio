@@ -20,7 +20,7 @@ public class WaitUtils {
 
     private static final Logger LOG = LoggerFactory.getLogger(WaitUtils.class);
     public static void waitFor(Callable<Boolean> o, String s) {
-        waitFor(o, s,Duration.ofSeconds(5));
+        waitFor(o, s,Duration.ofSeconds(10));
     }
 
     public static void waitFor(Callable<Boolean> o, String s, Duration duration) {
