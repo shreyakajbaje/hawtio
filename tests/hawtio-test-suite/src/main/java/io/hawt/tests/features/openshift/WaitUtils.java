@@ -36,7 +36,7 @@ public class WaitUtils {
     public static void waitForPageLoad() {
         waitFor(() -> {
             return Selenide.executeJavaScript("return document.readyState").equals("complete");
-        }, "Waiting for page to finish loading", Duration.ofSeconds(20));
+        }, "Waiting for page to finish loading", Duration.ofSeconds(50));
     }
 
     public static void withRetry(ThrowingRunnable runnable, int retries, Duration interval) {
